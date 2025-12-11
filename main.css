@@ -210,11 +210,12 @@ main {
 }
 
 section {
-  padding: 2.6rem 0;
+/*  padding: 2.6rem 0;*/
+  padding: 1.8rem 0;
 }
 
 #hero {
-  padding-top: 3.1rem;
+  padding-top: 5.1rem;
   padding-bottom: 3.1rem;
 }
 
@@ -292,10 +293,10 @@ section {
 }
 
 .hero-media {
-  border-radius: var(--radius);
-  background: radial-gradient(circle at top left, #e0f2fe, #fefce8);
+/*  border-radius: var(--radius);*/
+/*  background: radial-gradient(circle at top left, #e0f2fe, #fefce8);*/
   min-height: 190px;
-  padding: 1.2rem;
+/*  padding: 1.2rem;*/
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -310,10 +311,10 @@ section {
 }
 
 .hero-preview {
-  border-radius: 18px;
+  border-radius: 8px;
   overflow: hidden;
   margin-bottom: 0.75rem;
-  box-shadow: var(--shadow-soft);
+/*  box-shadow: var(--shadow-soft);*/
 }
 
 .hero-preview img {
@@ -323,12 +324,14 @@ section {
 
 .hero-card {
   background: var(--bg-card);
-  border-radius: 18px;
+/*  border-radius: 18px;*/
+  border-radius: 12px;
   padding: 1.05rem;
   box-shadow: var(--shadow-soft);
   width: 100%;
   display: grid;
   gap: 0.6rem;
+  margin-bottom: 30px;
 }
 
 .hero-card-title {
@@ -880,7 +883,7 @@ footer {
 
   .hero-inner {
     grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-    align-items: center;
+/*    align-items: center;*/
   }
 
   .features-grid {
