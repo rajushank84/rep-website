@@ -211,12 +211,12 @@ main {
 
 section {
 /*  padding: 2.6rem 0;*/
-  padding: 1.8rem 0;
+  padding: 1.2rem 0;
 }
 
+
 #hero {
-  padding-top: 5.1rem;
-  padding-bottom: 3.1rem;
+  padding-top: 72px;
 }
 
 .hero-inner {
@@ -262,6 +262,7 @@ section {
   flex-wrap: wrap;
   gap: 0.8rem;
   align-items: center;
+  margin-top: 24px;
 }
 
 .btn-primary {
@@ -325,13 +326,14 @@ section {
 .hero-card {
   background: var(--bg-card);
 /*  border-radius: 18px;*/
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 1.05rem;
-  box-shadow: var(--shadow-soft);
+/*  box-shadow: var(--shadow-soft);*/
   width: 100%;
   display: grid;
   gap: 0.6rem;
-  margin-bottom: 30px;
+/*  margin-bottom: 30px;*/
+  border: 1px solid #ececec;
 }
 
 .hero-card-title {
@@ -373,7 +375,7 @@ section {
 .section-title {
   font-size: 1.2rem;
   font-weight: 600;
-  margin-bottom: 0.65rem;
+  margin: 0 0 0.65rem;
 }
 
 .section-subtitle {
@@ -718,6 +720,10 @@ section {
   color: var(--text-muted);
 }
 
+#contact {
+  margin-bottom: 3rem;
+}
+
 /* Footer */
 
 footer {
@@ -913,8 +919,12 @@ footer {
 }
 
 @media (min-width: 900px) {
+  #hero {
+    padding-top: 3.6rem;
+  }
+
   section {
-    padding: 3.1rem 0;
+    padding: 2rem 0;
   }
 
   .hero-title {
