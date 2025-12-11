@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>3D Property — One-page Brochure</title>
+
+<style>
+  /* A4 print sizing and simple reset */
+  @page { size: A4 portrait; margin: 18mm; }
+  html,body{height:100%;margin:0;background:#fff;color:#0f172a;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; -webkit-font-smoothing:antialiased;}
+  .sheet{
+    width:210mm; /* A4 width */
+    min-height:297mm;
+    margin:auto;
+    box-sizing:border-box;
+    padding:20mm;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    color:#0f172a;
+  }
+
+  /* layout: top third image, bottom two-thirds content */
+  .hero {
+    flex: 0 0 32%;
+    position:relative;
+    border-radius:10px;
+    overflow:hidden;
+    background:#f3f4f6;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .hero img{width:100%;height:100%;object-fit:cover;display:block}
+
+  .content {
+    flex: 1 1 auto;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    padding-top:6px;
+  }
+
+  /* typography — minimal and bold */
+  .title {
+    font-size:22px;
+    line-height:1.06;
+    font-weight:700;
+    margin:0;
+  }
+  .subtitle {
+    font-size:12.5px;
+    color:#374151;
+    margin:6px 0 0 0;
+  }
+
+  .benefits {
+    display:flex;
+    gap:12px;
+    margin-top:10px;
+    flex-wrap:wrap;
+  }
+  .benefit {
+    background:#eff6ff;
+    color:#0b66d0;
+    padding:7px 10px;
+    border-radius:8px;
+    font-size:11.5px;
+    font-weight:600;
+  }
+
+  .list {
+    margin:12px 0 0 0;
+    padding:0;
+    list-style:none;
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+  }
+  .list li{
+    font-size:12px;
+    color:#111827;
+    background:transparent;
+    padding:0;
+  }
+
+  .quote {
+    margin-top:12px;
+    font-size:13px;
+    font-weight:600;
+    color:#111827;
+    background:#f8fafc;
+    padding:10px 12px;
+    border-radius:8px;
+    width:fit-content;
+  }
+
+  .cta {
+    margin-top:auto;
+    display:flex;
+    align-items:center;
+    gap:14px;
+    justify-content:flex-start;
+  }
+
+  .phone {
+    background:#0f172a;
+    color:#ffffff;
+    padding:10px 14px;
+    border-radius:8px;
+    font-weight:700;
+    font-size:13px;
+    text-decoration:none;
+  }
+
+  .small {
+    font-size:11px;
+    color:#6b7280;
+  }
+
+  /* keep it compact on-screen */
+  @media (max-width:900px){
+    .sheet{padding:18px}
+    .title{font-size:20px}
+    .hero{flex:0 0 36%}
+  }
+</style>
+</head>
+<body>
+  <div class="sheet">
+    <!-- HERO IMAGE (top ~1/3) -->
+    <div class="hero" role="img" aria-label="3D walkthrough preview">
+      <!-- Replace src with your 3D hero image (800x600 or similar). For transparent background, use PNG. -->
+      <img src="images/tour3.png" alt="3D preview placeholder" />
+    </div>
+
+    <!-- CONTENT (bottom ~2/3) -->
+    <div class="content">
+      <!-- Title + subtitle -->
+      <div>
+        <h1 class="title">Show Your Property in 3D.
+          <!-- <br><small style="font-weight:600;font-size:16px">Get serious buyers faster.</small> -->
+        </h1>
+        <p class="subtitle">Let buyers walk inside your home on their phone, before they visit.</p>
+        <p class="subtitle">Share one link on WhatsApp. No app required.</p>
+      </div>
+
+      <!-- Benefits pills (quick scan) -->
+      <div class="benefits" aria-hidden="true">
+        <div class="benefit">Shareable link</div>
+        <div class="benefit">Dedicated property page</div>
+        <div class="benefit">NRI-friendly</div>
+      </div>
+
+      <!-- What you get (very short) -->
+      <ul class="list" aria-label="What you get">
+        <li><strong>3D Walkthrough</strong> — interactive view of the whole property</li>
+        <li><strong>3D Walkaround Video</strong> — upload-ready for YouTube & social</li>
+        <li><strong>Share Page</strong> — simple microsite with link</li>
+      </ul>
+
+      <!-- Quote / FOMO -->
+      <div class="quote">“A 3D walkthrough speaks louder than 20 photos.”</div>
+
+      <!-- CTA -->
+      <div class="cta">
+        <a class="phone" href="tel:+919876543210">Call / WhatsApp: +91-98765-43210</a>
+        <div class="small">Book a demo • Ask for sample links</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
