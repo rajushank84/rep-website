@@ -527,12 +527,19 @@ section {
 
 .quote-block {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 500;
   padding: 1.5rem 1rem;
-  border-radius: var(--radius);
-  background: #eff6ff;
+/*  border-radius: var(--radius);*/
+/*  background: #fafafa;*/
   color: #0f172a;
+  font-style: italic;
+/*  background: #fff;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;*/
+
+
+/*  box-shadow: var(--shadow-soft);*/
 }
 
 .pricing-grid {
