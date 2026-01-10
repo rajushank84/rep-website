@@ -695,7 +695,7 @@ var APP_DATA = {
       "infoHotspots": []
     }
   ],
-  "name": "Project Title",
+  "name": "Sample Walkthrough",
   "settings": {
     "mouseViewMode": "drag",
     "autorotateEnabled": false,
